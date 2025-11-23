@@ -6,45 +6,144 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <a href="">
+            <img src="./assets/Base.svg" alt="">
+        </a>
+        <ul>
+            <li>
+                <a href="">Main</a>
+            </li>
+            <li>
+                <a href="">Rates</a>
+            </li>
+            <li>
+                <a href="">Create Account</a>
+            </li>
+        </ul>
+    </header>
+    <!-- структура для 1-й секции, первый идет главный заголовок страницы, затем текст, кнопка и картинкаф -->
     <section>
+        <h1>Markup achievement</h1>
+        <p>The harder you workfor something, the greater you'll fell when you achieve it.</p>
+        <button>Learn more</button>
+        <img src="./assets/image.svg" alt="">
         <div>
-            <img src="" alt="">
+            <img src="./assets/Desktop-1400px.svg" alt="">
             <div>
-                <img src="" alt="">
+                <img src="./assets/image.svg" alt="">
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/Base.svg" alt="">
             </div>
         </div>
-        <div>
-            <h1>Fluted Contrast</h1>
-
-            <span>Mug / 33 cl</span>
-            <p>Fluted Contrast represents the perfect fusion between the aesthetic and the functional. 
-                The design is elegant and modern, created out of a deep respect for Royal British history and traditions</p>
-                <div>
-                    <h2>Color options</h2>
-                    <ul>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                        </li>
-                    </ul>
+        
                 </div>
                 <div></div>
                 <button>Add To Basket</button>
         </div>
     </section>
+    <!-- структура для 2-й секции -->
+    <section>
+        <!-- заголовок 2-го уровня, текст и таблица-->
+        <h2>Rates</h2>
+        <p></p>
+        <!-- таблица состоит из 5-ти строк и 4-х ячеек в каждой строке, в каждой ячейке находится заголовок, иконка, кнопка или ссылка -->
+        <table>
+            <tr>
+                <th>Features</th>
+                <th>Standart</th>
+                <th>Plus</th>
+                <th>PRO</th>
+            </tr>
+            <tr>
+                <th>Theory</th>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+            </tr>
+            <tr>
+                <th>Practice</th>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+            </tr>
+            <tr>
+                <th>Code review</th>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+                <td><img src="./assets/Check.svg" alt=""></td>
+            </tr>
+            <tr>
+                <th><a href="">Have question?</a></th>
+                <td><button>get now</button></td>
+                <td><button>get now</button></td>
+                <td><button>get now</button></td>
+            </tr>
+        </table>
+    </section>
+    <!-- структура для 3-й секции -->
+    <section>
+        <h2>Create your free account</h2>
+        <p></p>
+        <ul>
+            <li>Easy setup, fast start</li>
+            <li>Free forever for corefeatures</li>
+            <li>14-day trial of premium features</li>
+        </ul>
+        <!-- <form action=""> -->
+            <!-- простое однострочное поле для ввода текста name -->
+            <input type="text" placeholder="Full Name*">
+            <!-- Однострочное поле для ввода e-mail -->
+            <input type="email" placeholder="Email*">
+            <!-- Однострочное поле для ввода пароля, в котором все символы во время набора должны быть скрыты от посторонних глаз -->
+            <input type="password" placeholder="Password*">
+            <!-- однострочное поле для ввода текста в формате даты -->
+            <input type="date">
+            <!-- выпадающий список, сразу сделаем так, чтобы по умолчанию отображалось слово Country -->
+            <select>
+                <option selected disabled>Country</option>
+                <option>Belarus</option>
+                <option>China</option>
+                <option>USA</option>
+            </select>
+        <fieldset>
+            <legend>Favorite Technologies</legend>
+            <!-- переключатели (radio button) -->
+            <label for="front">
+                <input id="front" type="radio" name="stack" checked>
+                Frontend
+            </label>
+            <label for="back">
+                <input id="back" type="radio" name="stack" checked>
+                Backend
+            </label>
+            <!-- переключатели, которые позволяют выбрать несколько элементов из перечисленных (checkbox) -->
+            <label for="html">
+                <input id="html" type="checkbox" name="html" checked>
+                HTML
+            </label>
+            <label for="css">
+                <input id="css" type="checkbox" name="css" checked>
+                CSS
+            </label>
+            <label for="react">
+                <input id="react" type="checkbox" name="react">
+                React
+            </label>
+            <label for="sc">
+                <input id="sc" type="checkbox" name="sc">
+                SC
+            </label>
+        </fieldset>
+        <!-- многострочное поле для ввода текста -->
+        <textarea placeholder="Somethig else about you..."></textarea>
+        <!-- кнопку отправки формы на сервер -->
+        <input type="submit">
+        <!-- </form> -->
+    </section>
+    <footer>
+        <small>Copiright 2025. All rights reserved.</small>
+    </footer>
 </body>
 </html>
